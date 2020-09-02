@@ -1,0 +1,7 @@
+---
+services:
+  AppZap\Migrator\Command\MigrateCommand:
+    tags:
+      - name: 'console.command'
+        command: 'migration:migrateall'
+        schedulable: false
