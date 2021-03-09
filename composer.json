@@ -1,20 +1,25 @@
 {
-	"name": "appzap/migrator",
-	"authors": [
-		{
-			"name": "Sebastian Michaelsen",
-			"email": "sebastian@app-zap.de",
-			"role": "developer"
-		}
-	],
-	"description": "A TYPO3 Extension for SQL Migrations",
-	"license": "GPL-2.0",
-	"type": "typo3-cms-extension",
-	"autoload": {
-		"psr-4": {
-			"AppZap\\Migrator\\": "Classes/"
-		}
-	},
+  "name": "appzap/migrator",
+  "authors": [
+    {
+      "name": "Sebastian Michaelsen",
+      "email": "sebastian@app-zap.de",
+      "role": "developer"
+    },
+    {
+      "name": "Tobias Liebig",
+      "email": "work@etobi.de",
+      "role": "developer"
+    }
+  ],
+  "description": "A TYPO3 Extension for SQL Migrations",
+  "license": "GPL-2.0",
+  "type": "typo3-cms-extension",
+  "autoload": {
+    "psr-4": {
+      "AppZap\\Migrator\\": "Classes/"
+    }
+  },
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "migrator"

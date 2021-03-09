@@ -1,4 +1,5 @@
 <?php
+
 namespace AppZap\Migrator\DirectoryIterator;
 
 /***************************************************************
@@ -52,7 +53,9 @@ class SortableDirectoryIterator implements IteratorAggregate
         $files = new DirectoryIterator($path);
         /** @var $file DirectoryIterator */
         foreach ($files as $file) {
-            if ($file->isDot()) continue;
+            if ($file->isDot()) {
+                continue;
+            }
             $this->_storage->offsetSet($file->getFilename(), $file->getFileInfo());
         }
         $this->_storage->uksort(
@@ -69,5 +72,4 @@ class SortableDirectoryIterator implements IteratorAggregate
     {
         return $this->_storage->getIterator();
     }
-
 }
