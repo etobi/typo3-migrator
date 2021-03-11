@@ -20,9 +20,9 @@
       "AppZap\\Migrator\\": "Classes/"
     }
   },
-	"extra": {
-		"typo3/cms": {
-			"extension-key": "migrator"
-		}
-	}
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "migrator"
+    }
+  }
 }
